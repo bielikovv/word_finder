@@ -1,0 +1,124 @@
+html, body{
+    background-attachment: fixed;
+    width: 100%;
+
+}
+
+body{
+    background: url("https://files.fm/thumb_show.php?i=g39vt3x3p");
+}
+
+
+#big-text-card{
+    width: 50%;
+    padding: 40px;
+
+
+}
+
+#add-file-btn{
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #e4856e;
+    width: 60%;
+    border-radius: 20px;
+    -webkit-transition: 0.15s ease-out;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 190px;
+
+
+}
+#add-file-btn:hover{
+    -webkit-transform: scale(1.05);
+}
+
+.navbar{
+    background-color: #4c5069;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+#choose-option-card{
+    width: 100%;
+    background-color: #f5f2e1;
+    color: #e4856e;
+    height: 550px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 0px;
+    color: #e4856e;
+    border-color: #4c5069;
+
+}
+#greeting-text-сard{
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    margin-top: 180px;
+}
+#file-form_card{
+    width: 100%;
+    background-color: #f5f2e1;
+    color: #e4856e;
+    padding: 20px;
+}
+#search-form{
+    margin-bottom: 20px;
+
+}
+
+#text-card{
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+#text-from-file{
+
+}
+.btn-outline-success{
+    background-color: rgba(0,0,0,0);
+    border-color: #e4856e;
+    color: #e4856e;
+    height: 45px;
+    -webkit-transition: 0.15s ease-out;
+}
+.btn-outline-success:hover{
+    background-color: rgba(0,0,0,0);
+    border-color: #e4856e;
+    color: #e4856e;
+    -webkit-transform: scale(1.05);
+}
+
+#current-file-card{
+    width: 100%;
+    background-color: #f5f2e1;
+    color: #e4856e;
+    padding: 50px;
+}
+
+.navbar-brand{
+    color: #f5f2e1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-brand:hover{
+    color: #e4856e;
+}
+
+#send-big-file-btn{
+    border: 1px solid #e4856e;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0);
+    color: #e4856e;
+    -webkit-transition: 0.15s ease-out;
+
+}
+
+#send-big-file-btn:hover{
+    -webkit-transform: scale(1.05);
+}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div id="choose-option-card">
+        <div class="row">
+            <div id="greeting-text-сard">
+                <h2>Hello! I can find the sentence you need by one word or phrase. </h2>
+            </div>
+            <div id="big-text-card">
+                <div id="add-file-btn">
+                    <h3>I have a file with text</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('big-text-card').onclick = function () {
+        window.location = 'big-text/'
+    }
+</script>
+
+{% endblock %}

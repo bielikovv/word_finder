@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div id="current-file-card">
+        <div class="row">
+            <form class="d-flex" id="search-form" action="{% url 'big_text_searching' unique_title unique_number %}">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div id="text-card">
+                <div id="text-from-file">
+                    {% autoescape off %}
+                    {{ str|truncatewords:256 }}
+                    {% endautoescape %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+
+</script>
+{% endblock %}

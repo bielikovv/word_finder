@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div id="file-form_card">
+        <div class="row">
+            <form action=""  enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="fieldWrapper">
+                    {{ form.file.errors }}
+                    <label for="id_subject">File (only .txt format:</label>
+                    {{ form.file }}
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.unique_title.errors }}
+                    <label for="id_subject">Unique title:</label>
+                    {{ form.unique_title }}
+                </div>
+                <div class="fieldWrapper">
+                    {{ form.unique_number.errors }}
+                    <label for="id_subject">Unique number:</label>
+                    {{ form.unique_number }}
+                </div>
+                <button type="submit" id="send-big-file-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+    document.getElementById('send-big-file-btn').onclick = function () {
+        let form = document.forms[0];
+        let title = form.elements.unique_title.value;
+        let num = form.elements.unique_number.value;
+
+        window.location = 'text/' + title + '/' + num;
+    }
+</script>
+{% endblock %}
