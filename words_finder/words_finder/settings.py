@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'words_finder',
         'USER': 'root',
-        'PASSWORD': 'vitrum15',
-        'HOST': 'localhost',
+        'PASSWORD': 'empty',
+        'HOST': 'empty',
 
     }
 }
